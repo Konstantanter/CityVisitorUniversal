@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CityVisitorUniversal"
+             x:Class="CityVisitorUniversal.MapsPage"         
+             xmlns:local1="clr-namespace:CityVisitorUniversal.AppData"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms">
+
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <!--<ffimageloadingsvg:SvgCachedImage Source="russia.svg" Grid.RowSpan="1" WidthRequest="400"/>-->
+        <!--<ffimageloadingsvg:SvgCachedImage Source="russia.svg" Grid.Row="0" Grid.RowSpan="1" HeightRequest="{Binding ImageHeight}" Aspect="Fill" />-->
+
+       <!-- <ffimageloadingsvg:SvgCachedImage x:Name ="Img1" Source ="Secos123.svg" Grid.Row="0" Grid.RowSpan="2" HeightRequest="{Binding ImageHeight}" Aspect="Fill" /> -->
+        
+
+        <!--<ffimageloadingsvg:SvgCachedImage Source="Rus.svg" Grid.Row="0" Grid.RowSpan="1" HeightRequest="{Binding ImageHeight}" Aspect="Fill" />-->
+        <skia:SKCanvasView x:Name="canvasView" Grid.RowSpan="2" PaintSurface="OnCanvasViewPaintSurface" Touch="OnCanvasViewTouch" >
+        
+        </skia:SKCanvasView>
+        <!--<Button Grid.Row="3" Text="Расскрасить регион" Clicked="OnColorRegionClicked"  />-->
+
+
+
+    </Grid>
+
+
+</ContentPage>
