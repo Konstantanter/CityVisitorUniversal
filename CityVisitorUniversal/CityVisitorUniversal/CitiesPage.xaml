@@ -34,7 +34,7 @@
                                  VerticalOptions="FillAndExpand">
                                     <Grid>
 
-                                        <Grid.ColumnDefinitions>
+                                        <Grid.ColumnDefinitions ColumnSpacing="10" RowSpacing="10">
                                             <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>

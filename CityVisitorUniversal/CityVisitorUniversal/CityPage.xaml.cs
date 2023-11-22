@@ -32,7 +32,7 @@ namespace CityVisitorUniversal
             InitializeComponent();
             myReg = region;
 
-            NameCity = $"город {selectedCity.Name}";
+            NameCity = selectedCity.Name;
             NameReg = region.Name;
             CoatOfArmsImage = selectedCity.ImagePath;
              //BindingContext = selectedCity;

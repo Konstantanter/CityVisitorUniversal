@@ -36,11 +36,11 @@
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout x:Name="myStackLayout" Spacing="15" 
-                                 BackgroundColor="#FFFFFF"
-                                 HorizontalOptions="FillAndExpand" 
+                                 BackgroundColor="{Binding VisitPercentage, Converter={StaticResource VisitedToColorConverter}}"
+                                    HorizontalOptions="FillAndExpand" 
                                  VerticalOptions="FillAndExpand">
-                                <Grid BackgroundColor="#FFFFFF">
-                                    <Grid.ColumnDefinitions>
+                                    <Grid BackgroundColor="{Binding VisitPercentage, Converter={StaticResource VisitedToColorConverter}}">
+                                        <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="*" />
