@@ -50,8 +50,8 @@ namespace CityVisitorUniversal
             }
 
 
-            //MainPage = new MapsPage();
-            MainPage = new NavigationPage(new Moins());
+            MainPage = new MapsPage();
+           // MainPage = new NavigationPage(new Moins());
             //Regions Adygea = new Regions("Республика Адыгея", "Adygea.png");
             //Adygea.IdRegionsMaps = "path16";
             //City Adygeisk = new City("Адыгейск", "Adygeisk.png");
